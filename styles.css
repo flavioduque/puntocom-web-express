@@ -237,6 +237,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 32px;
+    margin-bottom: 64px;
 }
 
 .service-card {
@@ -246,6 +247,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    cursor: pointer;
 }
 
 .service-card:hover {
@@ -255,7 +257,11 @@ section {
 
 .service-card.featured {
     border: 2px solid #f97316;
-    transform: scale(1.05);
+    transform: scale(1.02);
+}
+
+.service-card.featured:hover {
+    transform: scale(1.02) translateY(-8px);
 }
 
 .service-badge {
@@ -297,7 +303,14 @@ section {
 
 .service-description {
     color: #6b7280;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+}
+
+.service-speed {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f97316;
+    margin-bottom: 16px;
 }
 
 .service-features {
@@ -324,6 +337,44 @@ section {
     font-size: 20px;
     font-weight: 700;
     color: #f97316;
+}
+
+/* Service Features Grid */
+.service-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.feature-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.feature-card .icon {
+    width: 48px;
+    height: 48px;
+    color: #f97316;
+    margin: 0 auto 16px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.feature-card p {
+    color: #6b7280;
 }
 
 /* About Section */
@@ -389,7 +440,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 64px;
-    align-items: center;
+    align-items: start;
 }
 
 .coverage-map {
@@ -413,13 +464,13 @@ section {
     margin-bottom: 16px;
 }
 
-.cities-grid {
+.cities-list {
     display: grid;
     gap: 16px;
     margin-bottom: 32px;
 }
 
-.city {
+.city-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -431,6 +482,7 @@ section {
 
 .city-name {
     font-weight: 500;
+    color: #1f2937;
 }
 
 .coverage-status {
@@ -473,6 +525,43 @@ section {
 .coverage-stats .stat-label {
     color: #6b7280;
     font-size: 14px;
+}
+
+.expansion-card {
+    background: linear-gradient(135deg, #7c3aed 0%, #f97316 100%);
+    color: white;
+    padding: 32px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.expansion-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.expansion-card p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
+}
+
+.expansion-card .stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.expansion-card .stat-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.coverage-info h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1f2937;
 }
 
 /* Contact Section */
@@ -605,6 +694,7 @@ section {
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease;
+    text-decoration: none;
 }
 
 .social-link:hover {
@@ -680,7 +770,8 @@ section {
         gap: 24px;
     }
     
-    .services-grid {
+    .services-grid,
+    .service-features-grid {
         grid-template-columns: 1fr;
     }
     
@@ -703,14 +794,14 @@ section {
     .container {
         padding: 0 16px;
     }
+    
+    .coverage-stats {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
     .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .coverage-stats {
         grid-template-columns: 1fr;
     }
     
@@ -731,4 +822,14 @@ html {
 
 .hidden {
     display: none;
+}
+
+/* Success Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
 }
