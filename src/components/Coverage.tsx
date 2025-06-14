@@ -4,18 +4,10 @@ import { MapPin, CheckCircle } from "lucide-react";
 
 const Coverage = () => {
   const cities = [
-    "Asunción",
-    "Ciudad del Este",
-    "San Lorenzo",
-    "Luque",
-    "Capiatá",
-    "Lambaré",
-    "Fernando de la Mora",
-    "Nemby",
-    "Mariano Roque Alonso",
-    "Villa Elisa",
-    "Ñemby",
-    "Itauguá"
+    "Bogado",
+    "Gral. Delgado", 
+    "Gral. Artigas",
+    "Carmen del Paraná"
   ];
 
   return (
@@ -40,7 +32,7 @@ const Coverage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-3">
                   {cities.map((city, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
@@ -65,8 +57,8 @@ const Coverage = () => {
                   Cada mes agregamos nuevas zonas a nuestra red de fibra óptica. 
                   Nuestro objetivo es conectar todo Paraguay con internet de alta velocidad.
                 </p>
-                <div className="text-3xl font-bold">+15</div>
-                <div className="text-white/80">Nuevas zonas este año</div>
+                <div className="text-3xl font-bold">+4</div>
+                <div className="text-white/80">Ciudades conectadas</div>
               </CardContent>
             </Card>
 
