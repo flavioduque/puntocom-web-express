@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Wifi, Phone, Mail } from "lucide-react";
 
@@ -85,14 +84,6 @@ const Hero = () => {
               onClick={() => scrollToSection('servicios')}
             >
               Ver Planes
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-purple-900 px-8 py-3 text-lg"
-              onClick={() => scrollToSection('contacto')}
-            >
-              Contactar Ahora
             </Button>
           </div>
           
