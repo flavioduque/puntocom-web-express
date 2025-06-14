@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Wifi, Phone, Mail } from "lucide-react";
 
@@ -47,7 +48,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-            Ofrecemos conexión a internet ultrarrápida de fibra óptica para hogares y empresas en todo Paraguay. Velocidad, confiabilidad y soporte técnico 24/7.
+            Ofrecemos conexión a internet ultrarrápida de fibra óptica para hogares y empresas. Velocidad, confiabilidad y soporte técnico 24/7.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
