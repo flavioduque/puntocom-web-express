@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -58,18 +58,6 @@ const Contact = () => {
       title: "Email",
       info: "info@puntocominternet.py",
       description: "Respuesta en 24 horas"
-    },
-    {
-      icon: MapPin,
-      title: "Oficina Principal",
-      info: "Av. España 1234, Asunción",
-      description: "Paraguay"
-    },
-    {
-      icon: Clock,
-      title: "Soporte Técnico",
-      info: "24/7 disponible",
-      description: "Atención permanente"
     }
   ];
 
@@ -81,7 +69,7 @@ const Contact = () => {
             <span className="text-orange-500">Contáctanos</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            ¿Listo para mejorar tu conexión a internet? Contáctanos hoy mismo
+            ¿Listo para mejorar tu conexión a internet? Atendemos en todo Paraguay, contáctanos hoy mismo
           </p>
         </div>
 
@@ -110,18 +98,6 @@ const Contact = () => {
                 </Card>
               ))}
             </div>
-
-            <Card className="bg-gradient-to-r from-purple-600 to-orange-500 text-white">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-2">¿Necesitas ayuda técnica?</h3>
-                <p className="text-white/90 mb-4">
-                  Nuestro equipo técnico está disponible 24/7 para resolver cualquier problema.
-                </p>
-                <Button variant="secondary" className="bg-white text-purple-600 hover:bg-gray-100">
-                  Soporte Técnico
-                </Button>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Contact Form */}
@@ -182,8 +158,8 @@ const Contact = () => {
                       <SelectValue placeholder="Selecciona un plan" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="hogar-basico">Hogar Básico - 50 Mbps</SelectItem>
-                      <SelectItem value="hogar-premium">Hogar Premium - 100 Mbps</SelectItem>
+                      <SelectItem value="hogar-basico">Hogar Básico - 100 Mbps</SelectItem>
+                      <SelectItem value="hogar-premium">Hogar Premium - 150 Mbps</SelectItem>
                       <SelectItem value="empresarial">Empresarial - 200 Mbps</SelectItem>
                       <SelectItem value="personalizado">Plan Personalizado</SelectItem>
                     </SelectContent>
