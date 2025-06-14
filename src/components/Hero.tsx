@@ -1,9 +1,15 @@
 
-
 import { Button } from "@/components/ui/button";
 import { Wifi, Phone, Mail } from "lucide-react";
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-orange-600 flex items-center">
       <div className="absolute inset-0 bg-black/20"></div>
@@ -20,10 +26,30 @@ const Hero = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#servicios" className="text-white hover:text-orange-300 transition-colors">Servicios</a>
-            <a href="#nosotros" className="text-white hover:text-orange-300 transition-colors">Nosotros</a>
-            <a href="#cobertura" className="text-white hover:text-orange-300 transition-colors">Cobertura</a>
-            <a href="#contacto" className="text-white hover:text-orange-300 transition-colors">Contacto</a>
+            <button 
+              onClick={() => scrollToSection('servicios')} 
+              className="text-white hover:text-orange-300 transition-colors cursor-pointer"
+            >
+              Servicios
+            </button>
+            <button 
+              onClick={() => scrollToSection('nosotros')} 
+              className="text-white hover:text-orange-300 transition-colors cursor-pointer"
+            >
+              Nosotros
+            </button>
+            <button 
+              onClick={() => scrollToSection('cobertura')} 
+              className="text-white hover:text-orange-300 transition-colors cursor-pointer"
+            >
+              Cobertura
+            </button>
+            <button 
+              onClick={() => scrollToSection('contacto')} 
+              className="text-white hover:text-orange-300 transition-colors cursor-pointer"
+            >
+              Contacto
+            </button>
           </nav>
           
           <div className="flex items-center space-x-4 text-white text-sm">
@@ -49,14 +75,23 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-            Ofrecemos conexión a internet ultrarrápida de fibra óptica para hogares y empresas. Velocidad y confiabilidad.
+            Ofrecemos conexión a internet ultrarrápida de fibra óptica para hogares y empresas, velocidad y confiabilidad.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg"
+              onClick={() => scrollToSection('servicios')}
+            >
               Ver Planes
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-purple-900 px-8 py-3 text-lg">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-purple-900 px-8 py-3 text-lg"
+              onClick={() => scrollToSection('contacto')}
+            >
               Contactar Ahora
             </Button>
           </div>
@@ -85,4 +120,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
