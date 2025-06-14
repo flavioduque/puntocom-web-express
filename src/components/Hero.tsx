@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/7c142be4-3eda-4a83-bd77-5fd18100104b.png" 
+              src="/lovable-uploads/a71e5846-8927-4d91-a59e-1e7940eb766c.png" 
               alt="Puntocom Internet" 
               className="h-12 w-auto"
             />

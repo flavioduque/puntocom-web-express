@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/7c142be4-3eda-4a83-bd77-5fd18100104b.png" 
+              src="/lovable-uploads/a71e5846-8927-4d91-a59e-1e7940eb766c.png" 
               alt="Puntocom Internet" 
               className="h-12 w-auto"
             />
