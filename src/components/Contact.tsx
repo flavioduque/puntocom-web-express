@@ -50,7 +50,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      info: "+595 21 123 456",
+      info: "+595 985 749827",
       description: "Lunes a Viernes 8:00 - 18:00"
     },
     {

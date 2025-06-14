@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Wifi, Phone, Mail } from "lucide-react";
 
@@ -54,7 +55,7 @@ const Hero = () => {
           <div className="flex items-center space-x-4 text-white text-sm">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>+595 21 123 456</span>
+              <span>+595 985 749827</span>
             </div>
           </div>
         </div>
