@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wifi, Home, Building, Smartphone, Shield, Headphones } from "lucide-react";
@@ -6,24 +5,24 @@ import { Wifi, Home, Building, Smartphone, Shield, Headphones } from "lucide-rea
 const Services = () => {
   const plans = [
     {
-      name: "Hogar Básico",
-      speed: "50 Mbps",
-      price: "150.000",
+      name: "Plan Básico",
+      speed: "100 Mbps",
+      price: "120.000",
       features: [
-        "Ideal para 2-3 dispositivos",
+        "Ideal para 3-4 dispositivos",
         "Streaming en HD",
-        "Navegación web",
+        "Navegación web rápida",
         "Instalación gratuita"
       ],
       icon: Home,
       popular: false
     },
     {
-      name: "Hogar Premium",
-      speed: "100 Mbps",
-      price: "250.000",
+      name: "Plan Premium",
+      speed: "150 Mbps",
+      price: "150.000",
       features: [
-        "Ideal para 4-6 dispositivos",
+        "Ideal para 5-7 dispositivos",
         "Streaming 4K",
         "Gaming online",
         "WiFi de alta potencia"
@@ -32,9 +31,9 @@ const Services = () => {
       popular: true
     },
     {
-      name: "Empresarial",
+      name: "Plan Empresarial",
       speed: "200 Mbps",
-      price: "450.000",
+      price: "180.000",
       features: [
         "IP fija dedicada",
         "Soporte prioritario",
