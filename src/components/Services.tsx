@@ -9,7 +9,6 @@ const Services = () => {
       speed: "100 Mbps",
       price: "120.000",
       features: [
-        "Ideal para 3-4 dispositivos",
         "Streaming en HD",
         "Navegación web rápida",
         "Instalación gratuita"
@@ -22,7 +21,6 @@ const Services = () => {
       speed: "150 Mbps",
       price: "150.000",
       features: [
-        "Ideal para 5-7 dispositivos",
         "Streaming 4K",
         "Gaming online",
         "WiFi de alta potencia"
